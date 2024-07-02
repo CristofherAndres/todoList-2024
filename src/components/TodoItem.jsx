@@ -3,8 +3,9 @@ import {Fragment} from 'react';
 const TodoItem = (props) => {
 	return (
 		<Fragment>
-			<li className="list-group-item">
+			<li className="list-group-item d-flex justify-content-between">
 			{props.todo.tarea}
+			<input type='checkbox' className='form-checked-input me-2' checked={props.todo.estado}/>
 			</li>
 		</Fragment>
 	);
